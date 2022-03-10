@@ -1,0 +1,18 @@
+{application, meda_robot,
+ [{description, "An OTP application"},
+  {vsn, "1.0.0"},
+  {registered, []},
+  {mod, {meda_robot_app, []}},
+  {applications,
+   [kernel,
+    stdlib,
+    rosie_rclerl,
+    visualization_msgs,
+    tf2_msgs
+   ]},
+  {env,[]},
+  {modules, []},
+
+  {licenses, ["Apache 2.0"]},
+  {links, []}
+ ]}.

@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<robot name="meda_scene">
+
+  <!-- ********************** ROBOT BASE *********************************  -->
+  <link name="map">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="file:rviz2/scene/rocks.dae" scale="10 10 2"/>
+      </geometry>
+    </visual>
+
+  </link>
+
+</robot>

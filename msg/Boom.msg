@@ -1,0 +1,4 @@
+float32 horizontal_wind_speed
+float32 horizontal_wind_direction
+float32 vertical_wind_speed
+float32 vertical_wind_direction
