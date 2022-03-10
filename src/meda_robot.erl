@@ -115,11 +115,11 @@ wind_to_pose(#meda_robot_boom{horizontal_wind_speed = _H_SPEED, horizontal_wind_
         pose = #geometry_msgs_pose{
             position = #geometry_msgs_point{x = 0.0, y = 0.0, z = 2.0},
             % FIX
-            % orientation = robot_utils:get_quaternion_from_euler(0.0, 0.0, H_DIR)
+            orientation = robot_utils:get_quaternion_from_euler(0.0, 0.0, H_DIR)
             % BUG
-            orientation = robot_utils:get_quaternion_from_euler(
-               0.0, (rand:uniform() - 0.5) * 90, H_DIR
-            )
+            % orientation = robot_utils:get_quaternion_from_euler(
+            %    0.0, (rand:uniform() - 0.5) * 90, H_DIR
+            % )
         }
     }.
 

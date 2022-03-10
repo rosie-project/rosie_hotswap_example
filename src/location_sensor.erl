@@ -53,10 +53,10 @@ line_to_record(L) ->
     Roll = robot_utils:force_to_float(maps:get("ROVER_ROLL", L)),
 
     % FIX
-    % Position = #geometry_msgs_vector3{x=X,y=Y,z=Z},
+    Position = #geometry_msgs_vector3{x=X,y=Y,z=Z},
     % BUG
-    Z_bug = Z + (rand:uniform() - 0.5) * rand:uniform() * 2,
-    Position = #geometry_msgs_vector3{x = X, y = Y, z = Z_bug},
+    % Z_bug = Z + (rand:uniform() - 0.5) * rand:uniform() * 2,
+    % Position = #geometry_msgs_vector3{x = X, y = Y, z = Z_bug},
     % BUG
     Orientation = robot_utils:get_quaternion_from_euler(Roll, Pitch, Yaw),
     {Position, Speed, Orientation}.

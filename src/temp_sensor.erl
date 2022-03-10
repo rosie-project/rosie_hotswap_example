@@ -32,11 +32,11 @@ handle_call(read, _, #state{pressure_csv = W} = S) ->
     },
 
     % FIX
-    % {reply, MSG, S};
+    {reply, MSG, S};
     %
     %BUG
-    Unstable = MSG#sensor_msgs_temperature.temperature * (rand:uniform() - 0.5) * 50,
-    {reply, MSG#sensor_msgs_temperature{temperature = Unstable}, S};
+    % Unstable = MSG#sensor_msgs_temperature.temperature * (rand:uniform() - 0.5) * 50,
+    % {reply, MSG#sensor_msgs_temperature{temperature = Unstable}, S};
 %
 handle_call(_, _, S) ->
     {reply, ok, S}.

@@ -1,6 +1,6 @@
 {application, meda_robot,
  [{description, "An OTP application"},
-  {vsn, "1.0.0"},
+  {vsn, "1.0.1"},
   {registered, []},
   {mod, {meda_robot_app, []}},
   {applications,
